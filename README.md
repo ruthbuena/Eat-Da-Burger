@@ -7,5 +7,5 @@ The final application has been deployed through Heroku and can be accessed with 
 Below is a screenshot of the application's UI on a desktop:
 ![Desktop pic](public/assets/img/desktop.png)
 
-Below is an image of the mobile version of the application's UI:
+Below is a screenshot of the application's UI on a mobile device:
 ![Mobile pic](public/assets/img/mobile.png)
