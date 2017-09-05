@@ -1,6 +1,6 @@
 -- Create and use following schema to create DB in MySQL
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE burgers_db1;
+USE burgers_db1;
 
 -- Drop table if it already exists in DB
 DROP TABLE IF EXISTS burgers;
