@@ -1,5 +1,5 @@
 {
-  "name": "burger",
+  "name": "Eat-Da-Burger",
   "version": "1.0.0",
   "description": "Burger restaurant app that lets users input names of burger they'd like to eat using MySQL, Node, Express, Handlebars and a homemade ORM",
   "main": "server.js",
