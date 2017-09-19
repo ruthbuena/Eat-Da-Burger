@@ -6,7 +6,7 @@ var methodOverride = require ("method-override");
 var app = express();
 
 // Per documentation the below command is needed when connecting using Heroku
-var PORT = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 // Info used to connect to public folder
 app.use(express.static(__dirname + "/public"));
@@ -28,6 +28,4 @@ app.use("/", router);
 app.use("/update", router);
 app.use("/create", router);
 
-app.listen(PORT, function(){
-  console.log("We are listening on PORT: ", PORT);
-});
+app.listen(port);
