@@ -25,7 +25,7 @@ app.set("view engine", "handlebars");
 var router = require("./controllers/burgers_controller");
 
 app.use("/", router);
-// app.use("/update", router);
-// app.use("/create", router);
+app.use("/update", router);
+app.use("/create", router);
 
 app.listen(port);
