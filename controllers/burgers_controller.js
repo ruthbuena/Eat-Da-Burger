@@ -24,7 +24,7 @@ router.post("/", function(req, res) {
 });
 
 // update burger
-router.put("/:id", function(req, res) {
+router.put("/", function(req, res) {
   burger.update(req.body.burger_id, function(result) {
     console.log(result);
     res.redirect("/");
