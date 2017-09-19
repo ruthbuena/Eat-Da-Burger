@@ -1,26 +1,22 @@
-// Import the ORM functions
+// Burger model
+
 var orm = require("../config/orm.js");
 
 var burger = {
-  showAll: function(callback) {
-    orm.showAll(function(res){
-      callback(res);
+  all: function(cb) {
+    orm.all("burgers", function(res) {
+      cb(res);
     });
   },
-
-  insertBurger: function(burger_name, callback) {
-    orm.insertBurger(burger_name, function(res){
-      callback(res);
-    });
+  create: function(name, cb) {
+    orm.create("burgers", ["burger_name", "devoured"], [name, false], cb);
   },
-
-  updateBurger: function(burger_id, callback) {
-    orm.updateBurger(burger_id, function(res){
-      callback(res);
-    });
+  update: function(id, cb) {
+    var condition = "id=" + id;
+    orm.update("burgers", {
+      devoured: true
+    }, condition, cb);
   }
-
 };
 
-// Export the DB methods
 module.exports = burger;

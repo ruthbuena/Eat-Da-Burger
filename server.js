@@ -22,9 +22,11 @@ var exphbs = require ("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var router = require("./controllers/burgers_controller.js");
+var router = require("./controllers/burgers_controller");
 
 app.use("/", router);
+app.use("/update", router);
+app.use("/create", router);
 
 app.listen(PORT, function(){
   console.log("We are listening on PORT: ", PORT);

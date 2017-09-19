@@ -3,7 +3,7 @@ CREATE DATABASE burgers_db1;
 USE burgers_db1;
 
 -- Drop table if it already exists in DB
-DROP TABLE IF EXISTS burgers;
+DROP TABLE IF EXISTS burgers_db1;
 
 -- Create table for database
 CREATE TABLE burgers (

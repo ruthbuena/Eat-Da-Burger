@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruthbuena/burger.git"
+    "url": "git+https://github.com/ruthbuena/Eat-Da-Burger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ruthbuena/burger/issues"
+    "url": "https://github.com/ruthbuena/Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/ruthbuena/burger#readme",
+  "homepage": "https://github.com/ruthbuena/Eat-Da-Burger#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
