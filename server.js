@@ -6,7 +6,7 @@ var methodOverride = require ("method-override");
 var app = express();
 
 // Per documentation the below command is needed when connecting using Heroku
-var port = process.env.JAWSDB_URL;
+var port = process.env.PORT || 3000;
 
 // Info used to connect to public folder
 app.use(express.static(__dirname + "/public"));
@@ -25,7 +25,7 @@ app.set("view engine", "handlebars");
 var router = require("./controllers/burgers_controller");
 
 app.use("/", router);
-app.use("/update", router);
-app.use("/create", router);
+// app.use("/update", router);
+// app.use("/create", router);
 
 app.listen(port);
