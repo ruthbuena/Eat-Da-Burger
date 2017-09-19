@@ -8,7 +8,7 @@ var burger = require("../models/burger.js");
 //   res.redirect("/burgers");
 // });
 
-router.get("/burgers", function(req, res) {
+router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = { burgers: data };
     res.render("index", hbsObject);
@@ -16,7 +16,7 @@ router.get("/burgers", function(req, res) {
 });
 
 // post
-router.post("/burgers/create", function(req, res) {
+router.post("/", function(req, res) {
   burger.create(req.body.burger_name, function(result) {
     console.log(result);
     res.redirect("/");
@@ -24,7 +24,7 @@ router.post("/burgers/create", function(req, res) {
 });
 
 // update burger
-router.put("/burgers/update", function(req, res) {
+router.put("/:id", function(req, res) {
   burger.update(req.body.burger_id, function(result) {
     console.log(result);
     res.redirect("/");
